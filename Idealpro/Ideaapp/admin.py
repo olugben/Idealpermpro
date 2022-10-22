@@ -7,4 +7,7 @@ admin.site.register(Injection)
 admin.site.register(Surgery)
 admin.site.register(Dispense_drug)
 admin.site.register(Role)
+admin.site.site_header  =  "Administration for the Ideal App"  
+admin.site.site_title  =  "Idea App"
+admin.site.index_title  =  "Idea app"
 
