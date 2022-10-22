@@ -134,12 +134,18 @@ border-right: 50px solid #3CEDA7;
             <div class="about-section-col">
    
                 <div class="about">
-<li>                    
-<ol> User</ol>
-<ol>Role</ol>
-
-</li>
+                  {% for us  in user %}
+                  {{us }}
+                  {% endfor %}
+              
+              
                 <a href="#">Read More</a>
+              </div>
+              <div>
+                {% for rol  in role %}
+                {{rol }}
+                {% endfor %}
+            
               </div>
             </div>
             <div class="about-section-col">
