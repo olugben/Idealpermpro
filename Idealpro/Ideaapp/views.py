@@ -31,4 +31,6 @@ def Ceo(request):
             print(use)
             return render(request,"ceo.html",{"user":use,"role":role})
         else:
-            return HttpResponseNotFound("<h1>You dont have sufficient permission</h1>")    
+            return HttpResponseNotFound("<h1>You dont have sufficient permission</h1>") 
+def Home(request):
+    return render(request, "home.html")               
