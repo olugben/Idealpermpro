@@ -42,5 +42,5 @@ class Role(models.Model):
     )
     id=models.PositiveSmallIntegerField(choices=ROLE_CHOICES,primary_key=True)
     user=models.ManyToManyField(User)
-class User(User, PermissionsMixin):
-   role=models.ManyToManyField(Role, related_name="okay" )
+# class User(User, PermissionsMixin):
+#    role=models.ManyToManyField(Role, related_name="okay" )
