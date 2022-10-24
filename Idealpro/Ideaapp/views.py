@@ -28,9 +28,9 @@ def Ceo(request):
         if request.user.groups.filter(name="C-level"):
             use=User.objects.all()
             role=Role.objects.all()
-            print(use)
+            
             return render(request,"ceo.html",{"user":use,"role":role})
         else:
-            return HttpResponseNotFound("<h1>You dont have sufficient permission</h1>") 
+            return render(request,"denied.html") 
 def Home(request):
     return render(request, "home.html")               

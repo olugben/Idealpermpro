@@ -10,5 +10,7 @@ install django with command pip install django
 install mysqlclient with command pip install mysqlclient
 create a django project with 
 in the setting.py configure the database to point to mysql instead of default sqlite3
+create superuser
+
 
  
