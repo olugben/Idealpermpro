@@ -197,18 +197,18 @@
 
 <body>
   <header class="header">
-    <a href="#" class="logo">Developer</a>
+    <a href = "{% url 'admin:index' %}" class="logo">Developer</a>
     <nav class="nav-items">
       <a href = "{% url 'admin:index' %}">Login to Admin</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
+      <a href = "{% url 'addtoceogroup' %}">Join CEO</a>
+      <a href ="{% url 'only-for-ceo' %}">Only CEO page</a>
     </nav>
   </header>
   <main>
     <div class="intro">
       <h1>A Web Developer</h1>
-      <p>I am a web developer and I love to create websites.</p>
-      <button>Learn More</button>
+      <p>I am a web developer and I love to create web app.</p>
+      <a  href = "{% url 'admin:index' %}" type="button">Learn More</button>
     </div>
     <div class="achievements">
       <div class="work">
@@ -240,15 +240,15 @@
     <div class="bottom-links">
       <div class="links">
         <span>More Info</span>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a >Home</a>
+        <a >About</a>
+        <a >Contact</a>
       </div>
       <div class="links">
         <span>Social Links</span>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a ><i class="fab fa-facebook"></i></a>
+        <a ><i class="fab fa-twitter"></i></a>
+        <a ><i class="fab fa-instagram"></i></a>
       </div>
     </div>
   </footer>

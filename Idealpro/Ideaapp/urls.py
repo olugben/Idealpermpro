@@ -1,9 +1,10 @@
 from unicodedata import name
 from django.contrib import admin
 from django.urls import path
-from .views import Ceo, addToCsuiteGroup, Home
+from .views import Ceo, addToCsuiteGroup, Home,Error
 urlpatterns = [
     path("", Home, name="home" ),
     path("only-for-ceo", Ceo, name="only-for-ceo" ),
-    path("add-to-ceo-group", addToCsuiteGroup, name="addtoceogroup" )
+    path("add-to-ceo-group", addToCsuiteGroup, name="addtoceogroup" ),
+    path("error", Error, name="error" ),
 ]
