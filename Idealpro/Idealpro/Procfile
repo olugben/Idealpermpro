@@ -1,1 +1,1 @@
-web: gunicorn <idealpermpro>.wsgi --log-file -
+web: gunicorn <idealpro>.wsgi --log-file -
